@@ -40,7 +40,6 @@ describe('Controller-Service Integration Tests', () => {
         // Assert that the service's todos array is now empty.
 
         service.addTodo('Test todo');
-
         const todoId = service.getTodos()[0].id;
 
         controller.handleRemoveTodo(todoId);
